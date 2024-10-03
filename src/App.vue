@@ -1,19 +1,20 @@
 <!-- src/App.vue -->
 <template>
     <div id="app">
-      <main>
-        <router-view />
-      </main>
+      <Header />
+        <main class="content">
+          <router-view />
+        </main>
+      <Footer />
     </div>
   </template>
   
   <script setup>
-
+  import Header from './components/Header.vue';
+  import Footer from './components/Footer.vue';
   </script>
   
   <style scoped>
-  h1 {
-    color: #42b983;
-  }
+
   </style>
   
